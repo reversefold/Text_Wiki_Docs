@@ -1,0 +1,23 @@
+ About This Rule Parse Configuration Keys Render Configuration Keys Description
+=====  About This Rule =====
+| **Name** | raw |
+| **Type** | capturing block |
+| **Syntax** | two backticks, followed by the content, followed by two backticks |
+
+=====  Parse Configuration Keys =====
+None.
+
+=====  Render Configuration Keys =====
+None.
+
+=====  Description =====
+Use this when you want to mark text that should not be processed by the remaining Text_Wiki rules (i.e., it should be displayed literally as it is).
+
+For example, this markup...
+<code>
+
+**I'm strong!**  ``**I'm raw!**``
+</code>
+... results in:
+
+**I'm strong!**  <nowiki>**I'm raw!**</nowiki>

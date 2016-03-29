@@ -1,0 +1,48 @@
+
+=====  About This Rule =====
+| **Name** | heading |
+| **Type** | non-capturing block |
+| **Syntax** | 1 to 6 plus-signs at the beginning of a line, followed by a space, followed by the heading text |
+
+=====  Parse Configuration Keys =====
+| **Key** | **Type** | **Description** |
+| ''id_prefix'' | string | When generating internal table-of-contents heading identifiers, use this prefix; default is 'toc'. |
+
+=====  Render Configuration Keys =====
+| **Format** | **Key** | **Type** | **Description** |
+| ''Xhtml'' | ''css_h1'' | string | The CSS class to use for the <h1> tag. |
+| ''Xhtml'' | ''css_h2'' | string | The CSS class to use for the <h2> tag. |
+| ''Xhtml'' | ''css_h3'' | string | The CSS class to use for the <h3> tag. |
+| ''Xhtml'' | ''css_h4'' | string | The CSS class to use for the <h4> tag. |
+| ''Xhtml'' | ''css_h5'' | string | The CSS class to use for the <h5> tag. |
+| ''Xhtml'' | ''css_h6'' | string | The CSS class to use for the <h6> tag. |
+
+=====  Description =====
+Use this rule to generate section headings.  For example, the following markup...
+<code>
+
+
++  Heading Level 1
+
+++ Heading Level 2
+
++++  Heading Level 3
+
+++++ Heading Level 4
+
++++++  Heading Level 5
+
+++++++ Heading Level 6
+
+++++++ + There is no level 7
+
+</code>
+...produces this output:
+
+======  Heading Level 1 ======
+===== Heading Level 2 =====
+====  Heading Level 3 ====
+=== Heading Level 4 ===
+==  Heading Level 5 ==
+= Heading Level 6 =
+= + There is no level 7 =

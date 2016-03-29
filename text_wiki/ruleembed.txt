@@ -1,0 +1,24 @@
+ About This Rule Parse Configuration Keys Render Configuration Keys Description
+=====  About This Rule =====
+<html><span style="color: red;"></html>**Warning:**<html></span></html> This dangerous and powerful markup rule is **disabled by default**.  If you enable it, careless use can compromise the security of your system.
+
+| **Name** | embed |
+| **Type** | macro |
+| **Syntax** | ''<nowiki>[[</nowiki>embed **path/to/script.php**]]'' |
+
+=====  Parse Configuration Keys =====
+| **Key** | **Type** | **Description** |
+| ''base'' | string | The base path to your scripts directory |
+
+=====  Render Configuration Keys =====
+None.
+
+=====  Description =====
+This rule will run a PHP script of your choosing, capture the output of that script, and render that output as it is.  The output is not subject to parsing by Text_Wiki rules.  This means the output may or interfere with the output format you choose at render-time if the output is not already in the proper format.
+
+All your ''embed''-able scripts need to be in the same base directory path (although you can further organize that directory into subdirectories).  You can set that base path with the ''[[MethodSetParseConf|setParseConf()]]'' method:
+<code php>
+
+// [snip] create a Text_Wiki object ($wiki)
+$wiki->setParseConf('embed', 'base', '/path/to/scripts/');
+</code>

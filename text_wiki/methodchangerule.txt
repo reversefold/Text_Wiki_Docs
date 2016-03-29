@@ -1,0 +1,20 @@
+
+''void **changeRule** (string **old rule name** , string **new rule name**)''
+
+This method allows you to change one rule to another in the same place in the rule set.
+
+For example, say you have three rules in your rule set ...
+
+  * rule1
+  * rule2
+  * rule3
+... and you no longer want to use rule2; instead, you want rule4 to go there instead:
+<code php>
+
+$wiki->changeRule('rule2', 'rule4');
+</code>
+Now your rule set looks like this:
+
+  * rule1
+  * rule4 <-- changed from rule2
+  * rule3

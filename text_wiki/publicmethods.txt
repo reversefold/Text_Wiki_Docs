@@ -1,0 +1,29 @@
+
+  * Constructor
+    * [[MethodTextWiki|Text_Wiki()]] -- instantiates a new Text_Wiki object
+  * Parse and render
+    * [[MethodTransform|transform()]] -- Parses text and returns in a rendered format
+    * [[MethodParse|parse()]] -- Parses text according to rules and tokenizes the source
+    * [[MethodRender|render()]] -- Renders parsed source text into an output format
+  * Rule-set management
+    * [[MethodInsertRule|insertRule()]] -- Adds a rule to the set
+    * [[MethodDeleteRule|deleteRule()]] -- Removes a rule from the set
+    * [[MethodChangeRule|changeRule()]] -- Changes from one rule to another in place within the set
+    * [[MethodEnableRule|enableRule()]] -- Enables a rule in-place
+    * [[MethodDisableRule|disableRule()]] -- Disables a rule in-place
+  * Configuration management
+    * Parse
+      * [[MethodSetParseConf|setParseConf()]] -- Sets the configuration for a parse rule
+      * [[MethodGetParseConf|getParseConf()]] -- Gets the configuration for a parse rule
+    * Format
+      * [[MethodSetFormatConf|setFormatConf()]] -- Sets the configuration for how a format is pre- and post-rendered
+      * [[MethodGetFormatConf|getFormatConf()]] -- Gets the configuration for how a format is pre- and post-rendered
+    * Render
+      * [[MethodSetRenderConf|setRenderConf()]] -- Sets the configuration for how a rule is in rendered in a specific format
+      * [[MethodGetRenderConf|getRenderConf()]] -- Gets the configuration for how a rule is in rendered in a specific format
+  * Path management for user-defined rules
+    * [[MethodAddPath|addPath()]] -- Adds a directory to the path for user-defined parse, format, or render classes
+    * [[MethodGetPath|getPath()]] -- Gets the path directories for user-defined parse, format, or render classes
+  * Other methods
+    * [[MethodGetSource|getSource()]] -- Gets the parsed source text with delimited token markers
+    * [[MethodGetTokens|getTokens()]] -- Gets the tokens parsed out of the source text

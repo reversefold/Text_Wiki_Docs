@@ -1,0 +1,4 @@
+
+You can browse the current bug status [[http://pear.php.net/package/Text_Wiki/bugs|here]].
+
+After you browse the current bug list, you can report new bugs and feature requests [[http://pear.php.net/bugs/report.php?package=Text_Wiki|here]].

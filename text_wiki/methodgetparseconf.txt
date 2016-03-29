@@ -1,0 +1,14 @@
+
+''void **getParseConf** (string **rule name** [, string **conf key**])''
+
+Gets the value of a configuration key for a rule parser; if no key is specified, gets the entire configuration array.
+<code php>
+
+$wiki =& new Text_Wiki();
+
+// get the base file path for the "embed" rule
+$dir = $wiki->getParseConf('Embed', 'base');
+
+// get all configs for the "Tranlatehtml" rule
+$conf = $wiki->getParseConf('Translatehtml');
+</code>

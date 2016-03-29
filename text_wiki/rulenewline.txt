@@ -1,0 +1,37 @@
+ About This Rule Parse Configuration Keys Render Configuration Keys Description
+=====  About This Rule =====
+| **Name** | newline |
+| **Type** | inline |
+| **Syntax** | any line starting with a single newline in a paragraph or block-quote |
+
+=====  Parse Configuration Keys =====
+None.
+
+=====  Render Configuration Keys =====
+None.
+
+=====  Description =====
+Inside a block-quote or a paragraph, a single newline is an implicit line break.
+<code>
+
+Here's a normal paragraph
+with implicit line breaks
+in several places at once.
+
+> One level of block quoting. 
+> The quick brown fox
+> jumps over the lazy dog.
+
+Here's a normal paragraph
+with implicit line breaks
+in several places at once.
+</code>
+Here's a normal paragraph
+with implicit line breaks
+in several places at once.
+One level of block quoting. 
+The quick brown fox
+jumps over the lazy dog.
+Here's a normal paragraph
+with implicit line breaks
+in several places at once.
