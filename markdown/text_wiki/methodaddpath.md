@@ -1,0 +1,24 @@
+
+''void **addPath** (string **path type**, string **directory**)''
+
+Adds a directory to the list of paths Text_Wiki searches for user-defined parse and render classes.
+
+	:::php
+	
+	$wiki =& new Text_Wiki();
+	
+	// add a user-defined "parse" path
+	$wiki->addPath('parse', '/path/to/parse/rules/');
+	
+	// add a user-defined "render" path
+	$wiki->addPath('parse', '/path/to/render/classes/');
+
+Text_Wiki searches these paths in last-in-first-out order; that is, paths are added to the "top" of the search stack.  For example, if the default render search stack is ...
+
+ 1.  ''/original/path/''
+... and you call ''addPath('render', '/path/to/custom/renders/')'', the search stack will then look like this:
+
+ 1.  ''/path/to/custom/renders/''
+ 2.  ''/original/path/''
+The ''/path/to/custom/renders/'' will be searched first, then fall back to ''/original/path/''.
+

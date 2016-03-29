@@ -1,0 +1,50 @@
+ About This Rule Parse Configuration Keys Render Configuration Keys Description
+##  About This Rule
+
+ | **Name**   | colortext                      |                              
+ | --------   | ---------                      |                              
+ | **Type**   | inline                         |                              
+ | **Syntax** | `<nowiki>`##`</nowiki>`color** | **text`<nowiki>`##`</nowiki>` | 
+
+##  Parse Configuration Keys
+
+None.
+
+##  Render Configuration Keys
+
+None.
+
+##  Description
+
+Use this rule to mark colored text.  You describe the color using one of the W3C CSS color names...
+
+ | aqua    | `<html>``<span style="color: aqua;">``</html>`the quick brown fox jumps over the lazy dog`<html>``</span>``</html>`    | 
+ | ----    | -----------------------------------------------------------------------------------------------------------    | 
+ | black   | `<html>``<span style="color: black;">``</html>`the quick brown fox jumps over the lazy dog`<html>``</span>``</html>`   | 
+ | blue    | `<html>``<span style="color: blue;">``</html>`the quick brown fox jumps over the lazy dog`<html>``</span>``</html>`    | 
+ | fuchsia | `<html>``<span style="color: fuchsia;">``</html>`the quick brown fox jumps over the lazy dog`<html>``</span>``</html>` | 
+ | gray    | `<html>``<span style="color: gray;">``</html>`the quick brown fox jumps over the lazy dog`<html>``</span>``</html>`    | 
+ | green   | `<html>``<span style="color: green;">``</html>`the quick brown fox jumps over the lazy dog`<html>``</span>``</html>`   | 
+ | lime    | `<html>``<span style="color: lime;">``</html>`the quick brown fox jumps over the lazy dog`<html>``</span>``</html>`    | 
+ | maroon  | `<html>``<span style="color: maroon;">``</html>`the quick brown fox jumps over the lazy dog`<html>``</span>``</html>`  | 
+ | navy    | `<html>``<span style="color: navy;">``</html>`the quick brown fox jumps over the lazy dog`<html>``</span>``</html>`    | 
+ | olive   | `<html>``<span style="color: olive;">``</html>`the quick brown fox jumps over the lazy dog`<html>``</span>``</html>`   | 
+ | purple  | `<html>``<span style="color: purple;">``</html>`the quick brown fox jumps over the lazy dog`<html>``</span>``</html>`  | 
+ | red     | `<html>``<span style="color: red;">``</html>`the quick brown fox jumps over the lazy dog`<html>``</span>``</html>`     | 
+ | silver  | `<html>``<span style="color: silver;">``</html>`the quick brown fox jumps over the lazy dog`<html>``</span>``</html>`  | 
+ | teal    | `<html>``<span style="color: teal;">``</html>`the quick brown fox jumps over the lazy dog`<html>``</span>``</html>`    | 
+ | white   | `<html>``<span style="color: white;">``</html>`the quick brown fox jumps over the lazy dog`<html>``</span>``</html>`   | 
+ | yellow  | `<html>``<span style="color: yellow;">``</html>`the quick brown fox jumps over the lazy dog`<html>``</span>``</html>`  | 
+
+... or a standard hex code.
+
+	
+	
+	##red|This is red text,## but this is not.
+	
+	More text, and then ##ff9933|this is kind of orange.##
+
+`<html>``<span style="color: red;">``</html>`This is red text,`<html>``</span>``</html>` but this is not.
+
+More text, and then `<html>``<span style="color: #ff9933;">``</html>`this is kind of orange.`<html>``</span>``</html>`
+

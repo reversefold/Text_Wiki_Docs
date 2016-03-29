@@ -1,0 +1,27 @@
+ About This Rule Parse Configuration Keys Render Configuration Keys Description
+##  About This Rule
+
+ | **Name**   | tt                                                 | 
+ | --------   | --                                                 | 
+ | **Type**   | inline                                             | 
+ | **Syntax** | `<nowiki>`{{`</nowiki>`text`<nowiki>`}}`</nowiki>` | 
+
+##  Parse Configuration Keys
+
+None.
+
+##  Render Configuration Keys
+
+ | ''Xhtml'' | ''css'' | string | The CSS class to use for the `<tt>` tag. | 
+ | --------- | ------- | ------ | -------------------------------------- | 
+
+##  Description
+
+Use this rule to mark teletype (monospace) text.
+
+	
+	
+	This is {{teletype}} text.
+
+This is ''teletype'' text.
+

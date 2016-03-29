@@ -1,0 +1,11 @@
+
+''void **parse** (string **source text**)''
+
+This method will make a copy of the passed source text and parse it according to the current rule set, loading rule objects as it goes.  After ''parse()'' is complete, the ''$tokens'' property will have been populated with token elements, and the ''$source'' property will be filled with delimited token numbers where rules have found and removed matching text.
+
+	:::php
+	
+	// [snip] create a Text_Wiki object called $wiki
+	// [snip] load wiki text into $text
+	$wiki->parse($text);
+

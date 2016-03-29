@@ -1,0 +1,34 @@
+ About This Rule Parse Configuration Keys Render Configuration Keys Description
+##  About This Rule
+
+ | **Name**   | deflist                                             | 
+ | --------   | -------                                             | 
+ | **Type**   | non-capturing block                                 | 
+ | **Syntax** | '':'' **definition term** '':'' **definition text** | 
+
+##  Parse Configuration Keys
+
+None.
+
+##  Render Configuration Keys
+
+ | **Format** | **Key**    | **Type** | **Description**                        | 
+ | ---------- | -------    | -------- | ---------------                        | 
+ | ''Xhtml''  | ''css_dl'' | string   | The CSS class to use for the `<dl>` tag. | 
+ | ''Xhtml''  | ''css_dt'' | string   | The CSS class to use for the `<dd>` tag. | 
+ | ''Xhtml''  | ''css_dd'' | string   | The CSS class to use for the `<dt>` tag. | 
+
+##  Description
+
+Use this to present a definition list.  Generally, the term is rendered on a line by itself, and the text is placed on the next line and indented.
+
+For example:
+
+	
+	
+	: term 1 : some definition text
+	: term 2 : more definition text
+	: term 3 : this is starting to look
+	: term 4 : like a vocabulary list ;-)
+	`</code>`term 1some definition textterm 2more definition textterm 3this is starting to lookterm 4like a vocabulary list ;-)
+	

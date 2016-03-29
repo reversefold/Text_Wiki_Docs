@@ -1,0 +1,22 @@
+ About This Rule Parse Configuration Keys Render Configuration Keys Description
+##  About This Rule
+
+ | **Name**   | anchor                                                                                              | 
+ | --------   | ------                                                                                              | 
+ | **Type**   | macro                                                                                               | 
+ | **Syntax** | `<nowiki>`[# `</nowiki>`name_of_anchor`<nowiki>`](# `</nowiki>`name_of_anchor`<nowiki>`)`</nowiki>` | 
+
+##  Parse Configuration Keys
+
+None.
+
+##  Render Configuration Keys
+
+ | **Format** | **Key** | **Type** | **Description**                       | 
+ | ---------- | ------- | -------- | ---------------                       | 
+ | ''Xhtml''  | ''css'' | string   | The CSS class to use for the `<a>` tag. | 
+
+##  Description
+
+Adds a named anchor target on the page.  Note that the  anchor name may use only dash, underscore, dot, A-Z, a-z, and 0-9, and that there should be a space after the starting hash mark.
+

@@ -1,0 +1,43 @@
+ About This Rule Parse Configuration Keys Render Configuration Keys Description
+##  About This Rule
+
+ | **Name**   | paragraph                         | 
+ | --------   | ---------                         | 
+ | **Type**   | non-capturing block               | 
+ | **Syntax** | any text followed by two newlines | 
+
+##  Parse Configuration Keys
+
+None.
+
+##  Render Configuration Keys
+
+ | **Format** | **Key** | **Type** | **Description**             | 
+ | ---------- | ------- | -------- | ---------------             | 
+ | ''Xhtml''  | ''css'' | string   | The CSS class for `<p>` tags. | 
+
+##  Description
+
+This rule takes every text line that is followed by two newlines (i.e., two \n characters, also known as a double-space or double-carriage-return) and marks it as a semantic paragraph.  When the [newline](RuleNewline) rule is active, single newlines will be treated as line breaks within a semantic paragraph.
+
+**Note:** A "semantic" paragraph, for Text_Wiki, means the beginning and end are marked with tokens.  Displayed line breaks are not used to mark the paragraph, as displayed line breaks may mean different things to different renderers (XHTML treats line breaks differently from RTF or LaTeX, for example).
+This markup...
+
+	
+	
+	I am the first line of a paragraph; I don't have two newlines after me.
+	I have two newlines after me, marking the end of this paragraph.
+	
+	I too am a paragraph.
+	
+
+... becomes this output in XHTML:
+
+	
+	
+	`<p>`I am the first line of a paragraph; I don't have two newlines after me.`<br />`
+	I have two newlines after me, marking the end of this paragraph.`</p>`
+	
+	`<p>`I too am a paragraph.`</p>`
+	
+

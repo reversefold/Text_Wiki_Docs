@@ -1,0 +1,42 @@
+ About This Rule Parse Configuration Keys Render Configuration Keys Description
+##  About This Rule
+
+`<html>``<span style="color: red;">``</html>`Warning:`<html>``</span>``</html>` This very powerful rule is **disabled by default**.  If you enable it, be careful; you will be working with "real" HTML within the block, and as such can include JavaScript or other possibly malicious code.
+
+ | **Name**   | html                                                                                                                                                             | 
+ | --------   | ----                                                                                                                                                             | 
+ | **Type**   | capturing block                                                                                                                                                  | 
+ | **Syntax** | `<html>` on a line by itself at the beginning of the line, followed by content block, followed by `</html>` on a line by itself at the beginning of the line | 
+
+##  Parse Configuration Keys
+
+None.
+
+##  Render Configuration Keys
+
+None.
+
+##  Description
+
+Use this rule to mark "real" HTML code that should be honored in the browser.  It will not be parsed by the Text_Wiki engine.
+
+	
+	
+	
+	Before...
+	
+	`<html>`
+	`<center>`This is centered text`</center>`
+	`</html>`
+	
+	... and after.
+	
+
+Before...
+
+`<html>`
+`<center>`This is centered text`</center>`
+`</html>`
+
+... and after.
+

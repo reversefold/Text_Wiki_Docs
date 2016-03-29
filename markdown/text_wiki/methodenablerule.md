@@ -1,0 +1,12 @@
+
+''void **enableRule** (string **rule name**)''
+
+Enables an existing rule in the rule set so that the parser will use it.  Does not add rules to the set.
+
+`<php>`
+
+** [snip] create a Text_Wiki object called $wiki
+** enable the HTML rule in the rule set
+$wiki->enableRule('html');
+`</php>`
+
